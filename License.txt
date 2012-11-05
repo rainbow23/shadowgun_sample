@@ -1,0 +1,6 @@
+Legal notice
+
+Usage License
+
+All custom shaders in SHADOWGUN sample level are intellectual property of MADFINGER Games, a.s. and they are free to use (apart from BRDF character shader, which was created by Unity Technologies and is also free to use).
+Meshes and textures in the level remains property of MADFINGER Games, a.s. and cannot be used for any commercial purpose without permission from MADFINGER Games, a.s.

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{6CDB4719-1D28-38FF-BF92-A07FF7EAE25F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_0;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\SampleLevel\Editor\BRDFLookupTextureInspector.cs" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-weapon.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-cube-env.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-Unlit-Scroll2Layers-Mul-skybox.shader" />
+     <None Include="Assets\License.txt" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-animtexture.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Characters\Mobile-TexPseudoBRDF-WrapAround.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-Unlit-Scroll2Layers-Mul-Sine.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-blinking-god-rays.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Particle Alpha Blend.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-Lightmap-Unlit-VirtualVertexGlossy-Add.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-Lightmap-Unlit-Wind.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-billboarded-blinking-god-rays.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Particles Additive Culled.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-lightprobe-VirtualVertexGlossy-Add.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-skybox.shader" />
+     <None Include="Assets\SampleLevel\BRDF\Mobile-TexPseudoBRDF-WrapAround-ShadowgunStyleLightProbes.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-skybox-transparent.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-Unlit-Scroll2Layers-Sine-AlphaBlend.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\MADFINGER-god-rays.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\Environment\Mobile-Lightmap-Unlit.shader" />
+     <None Include="Assets\SampleLevel\Assets\Shaders\TextureSimple.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
